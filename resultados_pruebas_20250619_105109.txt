@@ -1,0 +1,60 @@
+================================================================================
+REPORTE DETALLADO DE PRUEBAS UNITARIAS
+Validador de Contraseñas
+Fecha de ejecución: 2025-06-19 10:51:09
+================================================================================
+
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0 -- /home/admon/Desktop/contraseñas/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/admon/Desktop/contraseñas
+configfile: pytest.ini
+collecting ... collected 37 items
+
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_valida_minima PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_valida_compleja PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_sin_mayuscula PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_sin_minuscula PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_sin_numero PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_muy_corta PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_exactamente_8_caracteres PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_vacia PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_solo_espacios PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_con_caracteres_especiales PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_con_espacios_valida PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_unicode PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[ValidPassword1-True] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[AnotherGood2-True] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[SuperSecure99-True] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[invalid-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[INVALID1-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Invalid-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[123456789-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[A1-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa1-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa12-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa123-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa1234-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa12345-False] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseñas_parametrizadas[Aa123456-True] PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_muy_larga PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_tipo_entrada_invalido PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_multiples_mayusculas_minusculas_numeros PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_solo_mayusculas_y_numeros PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_solo_minusculas_y_numeros PASSED
+test_validador_contraseñas.py::TestValidadorContraseñas::test_contraseña_solo_letras_mayusculas_y_minusculas PASSED
+test_validador_contraseñas.py::TestCasosEspeciales::test_contraseña_con_salto_de_linea PASSED
+test_validador_contraseñas.py::TestCasosEspeciales::test_contraseña_con_tabulacion PASSED
+test_validador_contraseñas.py::TestCasosEspeciales::test_contraseña_numeros_unicode PASSED
+test_validador_contraseñas.py::TestCasosEspeciales::test_contraseña_emojis PASSED
+
+- generated xml file: /home/admon/Desktop/contraseñas/junit_report_20250619_105109.xml -
+============================== 37 passed in 0.08s ==============================
+
+================================================================================
+RESUMEN DE EJECUCIÓN
+================================================================================
+✓ TODAS LAS PRUEBAS PASARON EXITOSAMENTE
+Código de salida: 0
+Reporte guardado en: resultados_pruebas_20250619_105109.txt
